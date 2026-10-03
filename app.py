@@ -20,5 +20,5 @@ def add_experiment(exp: ExperimentModel):
         exp_id=exp.exp_id, temperature=exp.temperature,
         pressure=exp.pressure, catalyst=exp.catalyst, yield_rate=exp.yield_rate
     ))
-    save_experiments(experiments)   #这个函数是用来将实验数据写入数据库的
+    save_experiments(experiments)   #这个函数是用来将实验数据写入数据库
     return {"status": "success", "message": "化工实验数据添加成功"}
